@@ -10,10 +10,10 @@ app.get('/', (req, res) => {
 
 app.get('/report', async (req, res) => {
 	try {
-    		const data = await sensor.read(22, 4);
+    const data = await sensor.read(22, 4);
 		const response = {
-			temperature: data.temperature.toFixed(2),
-			humidity: data.humidity.toFixed(2)
+			temperature: data.temperature,
+			humidity: data.humidity
 		}
 		res.status(200).json(response);
 	} catch (err) {

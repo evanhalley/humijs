@@ -1,0 +1,15 @@
+{
+  "name": "humijs",
+  "version": "1.0.0",
+  "description": "Reads the temperature and humidity from the DHT22 sensor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evan Halley",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-dht-sensor": "^0.4.3"
+  }
+}
